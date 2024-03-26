@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #4CAF50;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#tasksSection {
+    padding: 20px;
+}
+
+#tasksList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#tasksList li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#tasksList li .taskName {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#tasksList li .dueDate {
+    margin-left: auto;
+    color: #888;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.taskDescription {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+}
+
+#addTaskBtn {
+    border-radius: 5px;
+    width: 3rem;
+    height: 3rem;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.modal-content {
+    background-color: #6eab70;
+    border-radius: 5px;
+}
+
+.modal-content input {
+    height: 2rem;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 1rem;
+}
+
+#addTaskFormBtn {
+    background-color: #054f07;
+    color: white;
+    border-radius: 5px;
+    width: 5rem;
+    font-weight: bolder;
+}
+
+#deleteTaskFormBtn {
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    width: 5rem;
+    font-weight: bolder;
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 8px;
+}
+.task div{
+    display: flex;
+    gap: 10px;
+
+}
+.task div button{
+   font-size: 1.5em;
+
+}
